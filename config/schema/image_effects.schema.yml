@@ -1,0 +1,23 @@
+# image_effects_addon module schema
+image.effect.image_effects_addon_overlay_using_multiply:
+  type: mapping
+  label: 'Overlay using multiply image effect'
+  mapping:
+    overlay_image:
+      type: string
+      label: 'Overlay image path'
+    overlay_width:
+      type: string
+      label: 'Overlay image horizontal resizing'
+    overlay_height:
+      type: string
+      label: 'Overlay image vertical resizing'
+    placement:
+      type: string
+      label: 'Position of the overlay image on the canvas'
+    x_offset:
+      type: string
+      label: 'X offset of the overlay image vs placement'
+    y_offset:
+      type: string
+      label: 'Y offset of the overlay image vs placement'

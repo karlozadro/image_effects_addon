@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a summary of an image overlay using multiply effect.
+ *
+ * Available variables:
+ * - data: The current configuration for this overlay using multiply effect, including:
+ *   - overlay_image: The overlay image.
+ *   - overlay_width: The overlay image width.
+ *   - overlay_height: The overlay image height.
+ *   - placement: The position of the overlay on the underlying image.
+ *   - x_offset: The x_offset of the overlay image.
+ *   - y_offset: The y_offset of the overlay image.
+
+ * - effect: The effect information, including:
+ *   - id: The effect identifier.
+ *   - label: The effect name.
+ *   - description: The effect description.
+ *
+ * @ingroup themeable
+ */
+#}
+{% spaceless %}
+  - {{ 'Image'|t }}: <strong>{{ data.overlay_image|e }}</strong>
+  {% if data.overlay_width or data.overlay_height %}
+    - {{ 'Overlay width'|t }}:
+    {% if data.overlay_width %}{{ data.overlay_width|e }}{% else %}{{ '(scaled)'|t }}{% endif %},
+    {{ 'height'|t }}:
+    {% if data.overlay_height %}{{ data.overlay_height|e }}{% else %}{{ '(scaled)'|t }}{% endif %}
+  {% endif %}
+  - {{ 'Placement'|t }}: {{ data.placement|e }}
+  {% if data.x_offset %}- {{ 'X offset'|t }}: {{ data.x_offset|e }}{% endif %}
+  {% if data.y_offset %}- {{ 'Y offset'|t }}: {{ data.y_offset|e }}{% endif %}
+{% endspaceless %}

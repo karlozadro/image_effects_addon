@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function image_effects_addon_theme() {
+  return [
+    // Overlay using multiply image effect - summary.
+    'image_effects_addon_overlay_using_multiply_summary' => [
+      'variables' => ['data' => NULL, 'effect' => []],
+    ],
+  ];
+}
