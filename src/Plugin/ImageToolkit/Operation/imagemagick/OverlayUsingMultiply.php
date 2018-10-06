@@ -2,7 +2,7 @@
 
 namespace Drupal\image_effects_addon\Plugin\ImageToolkit\Operation\imagemagick;
 
-use Drupal\image_effects\Plugin\ImageToolkit\Operation\OverlayUsingMultiplyTrait;
+use Drupal\image_effects_addon\Plugin\ImageToolkit\Operation\OverlayUsingMultiplyTrait;
 use Drupal\imagemagick\Plugin\ImageToolkit\Operation\imagemagick\ImagemagickImageToolkitOperationBase;
 use Drupal\image_effects\Plugin\ImageToolkit\Operation\imagemagick\ImagemagickOperationTrait;
 

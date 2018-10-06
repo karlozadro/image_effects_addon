@@ -95,7 +95,7 @@ class OverlayUsingMultiplyImageEffect extends ConfigurableImageEffectBase implem
    */
   public function getSummary() {
     $summary = [
-      '#theme' => 'image_effects_overlay_using_multiply_summary',
+      '#theme' => 'image_effects_addon_overlay_using_multiply_summary',
       '#data' => $this->configuration,
     ];
     $summary += parent::getSummary();
